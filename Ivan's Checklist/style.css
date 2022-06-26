@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@200;400;700&display=swap");
+:root {
+  --secondary-color: #5e56ec;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #141231;
+  font-family: "Barlow", sans-serif;
+  color: white;
+}
+
+body .nav {
+  background-color: #0c0b1d;
+  height: 3.5em;
+  width: 100%;
+  color: white;
+}
+
+body .nav .logo {
+  font-size: 2rem;
+  font-weight: bolder;
+  letter-spacing: 0.1em;
+  text-transform: capitalize;
+  line-height: 1.6em;
+  padding: 0 2em;
+}
+
+body .nav ul {
+  float: right;
+  margin-right: 3.5em;
+}
+
+body .nav ul li {
+  display: inline-block;
+  line-height: 3.5em;
+}
+
+body .nav ul li a {
+  text-decoration: none;
+  color: white;
+  margin-left: 1em;
+  font-size: 1.2rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+body .nav ul li a:hover {
+  color: var(--secondary-color);
+}
+
+body .hero {
+  padding: 4em 5em;
+  background: -webkit-gradient(linear, left top, right top, color-stop(15%, rgba(20, 14, 126, 0.603)), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(90deg, rgba(20, 14, 126, 0.603) 15%, rgba(255, 255, 255, 0) 100%);
+}
+
+body .hero h2 {
+  font-size: 4rem;
+}
+
+body .hero .navpath {
+  position: absolute;
+  margin-top: 1em;
+  font-weight: 100;
+}
+
+body .hero .navpath ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .hero .navpath ul li {
+  list-style: none;
+}
+
+body .hero .navpath ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.4rem;
+  margin-right: 1em;
+}
+
+body .hero .navpath ul li i {
+  margin-right: 1em;
+  font-weight: 700;
+  opacity: 0.5;
+}
+
+body .container {
+  margin: 2em auto;
+  max-width: 50em;
+  padding-top: 2em;
+}
+
+body .container .search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 2em;
+}
+
+body .container .search input {
+  padding: 0.6em 0.5em;
+  border-radius: 30px;
+  border: none;
+  background-color: #e7e7e7;
+  color: #1d1d1d;
+  font-size: 1.2rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-family: "Barlow", sans-serif;
+}
+
+body .container .search input:focus {
+  outline: none;
+  color: white;
+  background-color: var(--secondary-color);
+}
+
+body .container .search i {
+  background-color: var(--secondary-color);
+  padding: 0.7em;
+  border-radius: 30px;
+  font-size: 1.2rem;
+  margin-left: -2.2em;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+body .container .search i:hover {
+  background-color: var(--secondary-color);
+}
+
+body .container .tasks li {
+  list-style: none;
+  padding: 0.4em;
+  font-size: 1.2rem;
+  border: 2px solid;
+  -o-border-image: linear-gradient(45deg, #0d0db3, purple) 1;
+     border-image: linear-gradient(45deg, #0d0db3, purple) 1;
+  margin: 1em 0;
+}
+
+body .container .tasks li .wrapper {
+  padding: 0.5em;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+body .container .tasks li .wrapper span {
+  margin-right: 1em;
+}
+
+body .container .tasks li .wrapper i {
+  float: right;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+body .container .tasks li .wrapper i:hover {
+  color: crimson;
+}
+
+body .container .tasks li .wrapper:hover {
+  background: -webkit-gradient(linear, left top, right top, color-stop(5%, rgba(255, 255, 255, 0.068)), color-stop(70%, rgba(255, 255, 255, 0)));
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.068) 5%, rgba(255, 255, 255, 0) 70%);
+}
+
+body .container .tasks .filtered {
+  display: none;
+}
+
+body .container .addition label {
+  margin-top: 2em;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .container .addition .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 1em;
+}
+
+body .container .addition .wrapper .textarea {
+  padding: 0.6em 0.5em;
+  border-radius: 30px;
+  border: none;
+  background-color: #e7e7e7;
+  color: #1d1d1d;
+  font-size: 1.2rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-family: "Barlow", sans-serif;
+}
+
+body .container .addition .wrapper .textarea:focus {
+  outline: none;
+  color: white;
+  background-color: var(--secondary-color);
+}
+
+body .container .addition .wrapper .btn {
+  background-color: var(--secondary-color);
+  padding: 0.6em 0.8em 0.5em 0.8em;
+  border-radius: 30px;
+  margin-left: -2.1em;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+  border: none;
+  color: white;
+  font-size: 1.3rem;
+  font-weight: bold;
+  line-height: 1.1em;
+  cursor: pointer;
+}
+
+body .container .addition .wrapper .btn:hover {
+  background-color: var(--secondary-color);
+}
+/*# sourceMappingURL=style.css.map */

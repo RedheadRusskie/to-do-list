@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@200;400;700&display=swap");
+
+:root {
+  --secondary-color: #5e56ec;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #141231;
+  font-family: "Barlow", sans-serif;
+  color: white;
+
+  .nav {
+    background-color: #0c0b1d;
+    height: 3.5em;
+    width: 100%;
+    color: white;
+
+    .logo {
+      font-size: 2rem;
+      font-weight: bolder;
+      letter-spacing: 0.1em;
+      text-transform: capitalize;
+      line-height: 1.6em;
+      padding: 0 2em;
+    }
+
+    ul {
+      float: right;
+      margin-right: 3.5em;
+
+      li {
+        display: inline-block;
+        line-height: 3.5em;
+
+        a {
+          text-decoration: none;
+          color: white;
+          margin-left: 1em;
+          font-size: 1.2rem;
+          transition: 0.3s;
+        }
+
+        a:hover {
+          color: var(--secondary-color);
+        }
+      }
+    }
+  }
+
+  .hero {
+    padding: 4em 5em;
+    background: linear-gradient(90deg, rgba(20, 14, 126, 0.603) 15%, rgba(255, 255, 255, 0) 100%);
+
+    h2 {
+      font-size: 4rem;
+    }
+
+    .navpath {
+      position: absolute;
+      margin-top: 1em;
+      font-weight: 100;
+      ul {
+        display: flex;
+
+        li {
+          list-style: none;
+
+          a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.4rem;
+            margin-right: 1em;
+          }
+
+          i {
+            margin-right: 1em;
+            font-weight: 700;
+            opacity: 0.5;
+          }
+        }
+      }
+    }
+  }
+
+  .container {
+    margin: 2em auto;
+    max-width: 50em;
+    padding-top: 2em;
+
+    .search {
+      display: flex;
+      justify-content: center;
+      margin: 2em;
+
+      input {
+        padding: 0.6em 0.5em;
+        border-radius: 30px;
+        border: none;
+        background-color: rgb(231, 231, 231);
+        color: rgb(29, 29, 29);
+        font-size: 1.2rem;
+        transition: 0.3s;
+        font-family: "Barlow", sans-serif;
+      }
+
+      input:focus {
+        outline: none;
+        color: white;
+        background-color: var(--secondary-color);
+      }
+
+      i {
+        background-color: var(--secondary-color);
+        padding: 0.7em;
+        border-radius: 30px;
+        font-size: 1.2rem;
+        margin-left: -2.2em;
+        transition: 0.3s;
+        cursor: pointer;
+      }
+
+      i:hover {
+        background-color: var(--secondary-color);
+      }
+    }
+
+    .tasks {
+      li {
+        list-style: none;
+        padding: 0.4em;
+        font-size: 1.2rem;
+        border: 2px solid;
+        border-image: linear-gradient(45deg, rgb(13, 13, 179), purple) 1;
+        margin: 1em 0;
+
+        .wrapper {
+          padding: 0.5em;
+          transition: 0.2s;
+
+          span {
+            margin-right: 1em;
+          }
+
+          i {
+            float: right;
+            transition: 0.3s;
+            cursor: pointer;
+          }
+
+          i:hover {
+            color: crimson;
+          }
+        }
+
+        .wrapper:hover {
+          background: linear-gradient(90deg, rgba(255, 255, 255, 0.068) 5%, rgba(255, 255, 255, 0) 70%);
+        }
+      }
+
+      .filtered {
+        display: none;
+      }
+    }
+
+    .addition {
+      label {
+        margin-top: 2em;
+        font-size: 1.4rem;
+        font-weight: bold;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .wrapper {
+        display: flex;
+        justify-content: center;
+        margin-top: 1em;
+
+        .textarea {
+          padding: 0.6em 0.5em;
+          border-radius: 30px;
+          border: none;
+          background-color: rgb(231, 231, 231);
+          color: rgb(29, 29, 29);
+          font-size: 1.2rem;
+          transition: 0.3s;
+          font-family: "Barlow", sans-serif;
+        }
+
+        .textarea:focus {
+          outline: none;
+          color: white;
+          background-color: var(--secondary-color);
+        }
+
+        .btn {
+          background-color: var(--secondary-color);
+          padding: 0.6em 0.8em 0.5em 0.8em;
+          border-radius: 30px;
+          margin-left: -2.1em;
+          transition: 0.3s;
+          cursor: pointer;
+          border: none;
+          color: white;
+          font-size: 1.3rem;
+          font-weight: bold;
+          line-height: 1.1em;
+          cursor: pointer;
+        }
+
+        .btn:hover {
+          background-color: var(--secondary-color);
+        }
+      }
+    }
+  }
+}

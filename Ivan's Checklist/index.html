@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ivan's Checklist</title>
+  <link rel="stylesheet" href="../style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="nav">
+    <label class="logo">Ivan K</label>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </div>
+  <div class="hero">
+    <h2>To-do's</h2>
+    <div class="navpath">
+      <ul>
+        <li>
+          <a href="">Home</a>
+          <i class='fas fa-angle-right'></i>
+        </li>
+        <li>
+          <a href="">Mini Projects</a>
+          <i class='fas fa-angle-right'></i>
+        </li>
+        <li>
+          <a href="">Simple Checklist</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="container">
+    <form class="search" id="search" type="text" name="search" placeholder="Search todos">
+      <input type="text" id="searchbar">
+      <i class="fa fa-search" aria-hidden="true"></i>
+    </form>
+    <ul class="tasks" id="tasks">
+      <li>
+        <div class="wrapper">
+          <span>Learn TypeScript</span>
+          <i class="far fa-trash-alt delete"></i>
+        </div>
+      </li>
+      <li>
+        <div class="wrapper">
+          <span>Learn React</span>
+          <i class="far fa-trash-alt delete"></i>
+        </div>
+      </li>
+      <li>
+        <div class="wrapper">
+          <span>Complete To-do's list</span>
+          <i class="far fa-trash-alt delete"></i>
+        </div>
+      </li>
+    </ul>
+    <form class="addition" id="addition">
+      <label>Add a to-do..</label>
+      <div class="wrapper">
+        <input class="textarea" type="form" type="text" name="add">
+        <input class="btn" type="submit" for="add" value="+">
+      </div>
+    </form>
+  </div>
+  <script src="./script.js"></script>
+</body>
+
+</html>
